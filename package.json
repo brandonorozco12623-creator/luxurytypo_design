@@ -1,0 +1,23 @@
+{
+  "name": "luxurytypo_design",
+  "version": "1.0.0",
+  "description": "A sophisticated, premium website showcasing luxury typography as a UX design style. Built with HTML, CSS, and vanilla JavaScript, this project demonstrates how refined typographic design can elevate web experiences.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonorozco12623-creator/luxurytypo_design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonorozco12623-creator/luxurytypo_design/issues"
+  },
+  "homepage": "https://github.com/brandonorozco12623-creator/luxurytypo_design#readme",
+  "devDependencies": {
+    "lighthouse": "^11.7.1"
+  }
+}
