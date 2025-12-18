@@ -7,6 +7,18 @@
   
   <title>About - Luxury Typography</title>
   
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About - Luxury Typography">
+  <meta property="og:description" content="About Luxury Typography - Our Philosophy and Approach to Premium Web Design">
+  <meta property="og:url" content="https://yourdomain.com/about">
+  <meta property="og:site_name" content="Luxury Typography">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About - Luxury Typography">
+  <meta name="twitter:description" content="About Luxury Typography - Our Philosophy and Approach to Premium Web Design">
+  
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
   
@@ -22,28 +34,34 @@
 </head>
 <body class="page-transition">
 
+  <!-- Skip to main content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- HEADER NAVIGATION -->
   <header class="header">
     <div class="header-container">
       <a href="../../index.html" class="logo">Luxury Type</a>
       
-      <nav class="nav-menu" id="navMenu">
+      <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
         <a href="../../index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link active">About</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
       
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
     </div>
   </header>
 
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
   <!-- PAGE HERO -->
-  <section class="hero" style="min-height: 60vh;">
+  <section class="hero" style="min-height: 60vh;" aria-label="Hero section">
     <div class="hero-content">
       <p class="label-text" style="margin-bottom: var(--space-lg); color: var(--color-accent);">About Us</p>
       <h1 class="hero-title">
@@ -352,6 +370,9 @@
     </div>
   </section>
 
+  </main>
+  <!-- End Main Content -->
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
@@ -365,17 +386,19 @@
         </div>
 
         <div class="footer-section">
-          <h3>Navigation</h3>
+          <h2 style="font-size: var(--text-lg); margin: 0;">Navigation</h2>
+          <nav aria-label="Footer navigation">
           <div class="footer-links">
             <a href="../../index.html" class="footer-link">Home</a>
             <a href="about.html" class="footer-link">About</a>
             <a href="gallery.html" class="footer-link">Gallery</a>
             <a href="contact.html" class="footer-link">Contact</a>
           </div>
+          </nav>
         </div>
 
         <div class="footer-section">
-          <h3>Resources</h3>
+          <h2 style="font-size: var(--text-lg); margin: 0;">Resources</h2>
           <div class="footer-links">
             <a href="#" class="footer-link">Typography Guide</a>
             <a href="#" class="footer-link">Design Principles</a>
@@ -385,7 +408,7 @@
         </div>
 
         <div class="footer-section">
-          <h3>Connect</h3>
+          <h2 style="font-size: var(--text-lg); margin: 0;">Connect</h2>
           <div class="footer-social">
             <a href="#" class="social-link" aria-label="Twitter">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -412,16 +435,34 @@
 
       <div class="footer-bottom">
         <p>&copy; 2025 Luxury Typography. All rights reserved.</p>
+        <nav aria-label="Legal navigation">
         <div style="display: flex; gap: var(--space-lg);">
-          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="../../privacy.html" class="footer-link">Privacy Policy</a>
           <a href="#" class="footer-link">Terms of Service</a>
         </div>
+        </nav>
       </div>
     </div>
   </footer>
 
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-hidden="true">
+    <div class="cookie-banner-content">
+      <p>
+        This website uses cookies to enhance your browsing experience and analyze site traffic. 
+        By clicking 'Accept', you consent to our use of cookies. 
+        <a href="../../privacy.html">Learn more in our Privacy Policy</a>.
+      </p>
+      <div class="cookie-banner-actions">
+        <button id="cookie-accept">Accept</button>
+        <button id="cookie-decline">Decline</button>
+      </div>
+    </div>
+  </div>
+
   <!-- JavaScript -->
   <script src="../scripts/main.js"></script>
+  <script src="../scripts/cookies.js"></script>
 
 </body>
 </html>

@@ -3,23 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Luxury Typography - Elevating Web Design Through Premium Typographic Excellence">
-  <meta name="keywords" content="luxury typography, premium design, web typography, elegant design">
-  <meta name="author" content="Luxury Typography Studio">
+  <meta name="description" content="404 - Page Not Found. The page you're looking for doesn't exist.">
+  <meta name="robots" content="noindex, nofollow">
   
-  <title>Luxury Typography - Premium Web Design Excellence</title>
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Luxury Typography - Premium Web Design Excellence">
-  <meta property="og:description" content="Luxury Typography - Elevating Web Design Through Premium Typographic Excellence">
-  <meta property="og:url" content="https://yourdomain.com/">
-  <meta property="og:site_name" content="Luxury Typography">
-  
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Luxury Typography - Premium Web Design Excellence">
-  <meta name="twitter:description" content="Luxury Typography - Elevating Web Design Through Premium Typographic Excellence">
+  <title>404 - Page Not Found | Luxury Typography</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
@@ -36,7 +23,7 @@
 </head>
 <body>
 
-  <!-- Skip to main content link for screen readers -->
+  <!-- Skip to main content link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- HEADER NAVIGATION -->
@@ -45,7 +32,7 @@
       <a href="index.html" class="logo">Luxury Type</a>
       
       <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
-        <a href="index.html" class="nav-link active">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="src/pages/about.html" class="nav-link">About</a>
         <a href="src/pages/gallery.html" class="nav-link">Gallery</a>
         <a href="src/pages/contact.html" class="nav-link">Contact</a>
@@ -62,22 +49,55 @@
   <!-- MAIN CONTENT -->
   <main id="main-content">
 
-  <!-- HERO SECTION -->
-  <section class="hero" aria-label="Hero section">
-    <div class="hero-content">
-      <h1 class="hero-title">
-        Typography<br>is an Art
+  <!-- 404 ERROR SECTION -->
+  <section class="hero" style="min-height: 80vh; display: flex; align-items: center;" aria-label="404 Error">
+    <div class="hero-content" style="text-align: center;">
+      <p class="label-text" style="margin-bottom: var(--space-lg); color: var(--color-accent);">Error 404</p>
+      
+      <h1 style="font-family: var(--font-display); font-size: var(--text-8xl); font-weight: var(--font-light); line-height: var(--leading-tight); margin-bottom: var(--space-xl); color: var(--color-primary);">
+        404
       </h1>
-      <p class="hero-subtitle">
-        Where elegance meets functionality, and words become visual poetry
+      
+      <h2 style="font-family: var(--font-display); font-size: var(--text-3xl); font-weight: var(--font-regular); margin-bottom: var(--space-xl); color: var(--color-secondary);">
+        Page Not Found
+      </h2>
+      
+      <p style="font-size: var(--text-lg); color: var(--color-tertiary); line-height: var(--leading-relaxed); max-width: 600px; margin: 0 auto var(--space-3xl);">
+        The page you're looking for seems to have wandered off. 
+        Perhaps it was lost in translation, or maybe it never existed at all. 
+        Don't worry—we'll help you find your way back.
       </p>
-      <p class="hero-description">
-        Experience the refined beauty of luxury typography. Every letter, every space, 
-        every line carefully crafted to create an unforgettable digital experience.
-      </p>
-      <div class="hero-cta">
-        <a href="src/pages/gallery.html" class="btn btn-primary btn-press">Explore Gallery</a>
-        <a href="src/pages/about.html" class="btn btn-accent btn-press">Learn More</a>
+
+      <div style="display: flex; gap: var(--space-lg); justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary btn-press">
+          Return Home
+        </a>
+        <a href="src/pages/contact.html" class="btn btn-accent btn-press">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Helpful Links -->
+      <div style="margin-top: var(--space-4xl);">
+        <p style="font-size: var(--text-sm); color: var(--color-tertiary); margin-bottom: var(--space-lg); text-transform: uppercase; letter-spacing: var(--tracking-wider);">
+          Helpful Links
+        </p>
+        <nav aria-label="Quick navigation links">
+          <div style="display: flex; gap: var(--space-xl); justify-content: center; flex-wrap: wrap;">
+            <a href="index.html" style="font-size: var(--text-base); color: var(--color-accent); text-decoration: none; transition: color 0.3s ease;" class="hover-underline">
+              Home
+            </a>
+            <a href="src/pages/about.html" style="font-size: var(--text-base); color: var(--color-accent); text-decoration: none; transition: color 0.3s ease;" class="hover-underline">
+              About
+            </a>
+            <a href="src/pages/gallery.html" style="font-size: var(--text-base); color: var(--color-accent); text-decoration: none; transition: color 0.3s ease;" class="hover-underline">
+              Gallery
+            </a>
+            <a href="src/pages/contact.html" style="font-size: var(--text-base); color: var(--color-accent); text-decoration: none; transition: color 0.3s ease;" class="hover-underline">
+              Contact
+            </a>
+          </div>
+        </nav>
       </div>
     </div>
   </section>
@@ -90,7 +110,7 @@
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>Luxury Typography</h3>
+          <h2 style="font-size: var(--text-xl); margin: 0;">Luxury Typography</h2>
           <p style="color: rgba(255, 255, 255, 0.6); line-height: var(--leading-relaxed); margin-top: var(--space-md);">
             Elevating web design through premium typographic excellence. 
             Where every letter tells a story.

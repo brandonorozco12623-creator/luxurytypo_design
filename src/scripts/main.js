@@ -52,6 +52,9 @@ function initMobileNav() {
     menuToggle.classList.toggle('active');
     navMenu.classList.toggle('active');
     
+    // Update aria-expanded for accessibility
+    menuToggle.setAttribute('aria-expanded', !isActive);
+    
     // Prevent body scroll when menu is open
     if (!isActive) {
       document.body.style.overflow = 'hidden';
@@ -67,6 +70,7 @@ function initMobileNav() {
   function closeMenu() {
     menuToggle.classList.remove('active');
     navMenu.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
     document.body.style.paddingRight = '';
   }
