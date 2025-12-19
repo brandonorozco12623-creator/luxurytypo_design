@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/brandonorozco12623-creator/luxurytypo_design#readme",
   "devDependencies": {
-    "lighthouse": "^11.7.1"
+    "@lhci/cli": "^0.15.1",
+    "htmlhint": "^1.8.0",
+    "husky": "^9.1.7",
+    "lighthouse": "^11.7.1",
+    "lint-staged": "^16.2.7",
+    "stylelint": "^16.26.1"
   }
 }
